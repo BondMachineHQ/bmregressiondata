@@ -1,0 +1,5 @@
+regressions:
+  - HDL:
+    - type: hdl
+    ... 
+
