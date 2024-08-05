@@ -1,0 +1,4 @@
+regbase: basys3_led_on_off_shell
+sourcedata: working_dir/bondmachine.sv
+targetdata: bondmachine.sv
+regcommand: make hdl
