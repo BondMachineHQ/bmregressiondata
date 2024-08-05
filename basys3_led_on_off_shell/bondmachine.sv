@@ -710,7 +710,7 @@ module bondmachine_main(
 
 	initial begin
 		$display("Loading memory init file header into array.");
-		$readmemh("/tmp/bmregression.sWSm19rlnt5j/examples/basys3_led_on_off_shell/header.mem", header);
+		$readmemh("../header.mem", header);
 		hcount=99;
 	end
 	wire [7:0] p0vtm0dout;
@@ -776,7 +776,7 @@ module bondmachine_main(
 		.ADDR_WIDTH(FONTROM_A_WIDTH), 
 		.DATA_WIDTH(FONTROM_D_WIDTH), 
 		.DEPTH(FONTROM_DEPTH), 
-		.FONTSFILE("/tmp/bmregression.sWSm19rlnt5j/examples/basys3_led_on_off_shell/fonts.mem"))
+		.FONTSFILE("../fonts.mem"))
 		fonts (
 		.addr(fontaddress[FONTROM_A_WIDTH-1:0]), 
 		.data(dataout)
