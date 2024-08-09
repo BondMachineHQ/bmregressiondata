@@ -110,7 +110,7 @@ module p0(clock_signal, reset_signal, rom_bus, rom_value, o0, o0_valid, o0_recei
 
 	(* KEEP = "TRUE" *) reg [2:0] _pc;		// Program counter
 
-	// The number of registers are 2^R, two letters and an unserscore as identifier , maximum R=8 and 265 rigisters
+	// The number of registers are 2^R, two letters and an underscore as identifier , maximum R=8 and 265 rigisters
 	(* KEEP = "TRUE" *) reg [7:0] _r0;
 	(* KEEP = "TRUE" *) reg [7:0] _r1;
 
