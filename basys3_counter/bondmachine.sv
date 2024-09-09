@@ -155,7 +155,7 @@ module p0(clock_signal, reset_signal, rom_bus, rom_value, ram_din, ram_dout, ram
 	output o0_valid;
 	input o0_received;
 
-			// Opcodes in the istructions, lenght accourding the number of the selected.
+			// Opcodes in the instructions, length according the number of the selected.
 	localparam	CLR=2'b00,          // Clear register
 			INC=2'b01,          // Increment a register by 1
 			J=2'b10,          // Jump to a program location

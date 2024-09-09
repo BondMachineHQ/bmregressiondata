@@ -1133,7 +1133,7 @@ module p0(clock_signal, reset_signal, rom_bus, rom_value, ram_din, ram_dout, ram
 	assign vtm0wren = vtm0_wren_i;
 	assign vtm0en = vtm0_en_i;
 
-			// Opcodes in the istructions, lenght accourding the number of the selected.
+			// Opcodes in the instructions, length according the number of the selected.
 	localparam	CALLO8S=5'b00000,          // Call a rom subroutine via an hardware stack called s with depth 8
 			CLR=5'b00001,          // Clear register
 			CMPR=5'b00010,          // Register comparison

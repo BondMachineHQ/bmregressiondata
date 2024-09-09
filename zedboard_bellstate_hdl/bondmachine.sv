@@ -2125,7 +2125,7 @@ module p0(clock_signal, reset_signal, rom_bus, rom_value, i0, i0_valid, i0_recei
 	output o1_valid;
 	input o1_received;
 
-			// Opcodes in the istructions, lenght accourding the number of the selected.
+			// Opcodes in the instructions, length according the number of the selected.
 	localparam	ADDF=3'b000,          // Register addf
 			CLR=3'b001,          // Clear register
 			I2RW=3'b010,          // Input to register
@@ -3624,7 +3624,7 @@ module p10(clock_signal, reset_signal, rom_bus, rom_value, ram_din, ram_dout, ra
 	output o1_valid;
 	input o1_received;
 
-			// Opcodes in the istructions, lenght accourding the number of the selected.
+			// Opcodes in the instructions, length according the number of the selected.
 	localparam	ADDF=4'b0000,          // Register addf
 			CPY=4'b0001,          // Copy from a register to another
 			DEC=4'b0010,          // Decrement a register by 1
@@ -6201,7 +6201,7 @@ module p11(clock_signal, reset_signal, rom_bus, rom_value, ram_din, ram_dout, ra
 	output o1_valid;
 	input o1_received;
 
-			// Opcodes in the istructions, lenght accourding the number of the selected.
+			// Opcodes in the instructions, length according the number of the selected.
 	localparam	ADDF=4'b0000,          // Register addf
 			CPY=4'b0001,          // Copy from a register to another
 			DEC=4'b0010,          // Decrement a register by 1
@@ -8778,7 +8778,7 @@ module p12(clock_signal, reset_signal, rom_bus, rom_value, ram_din, ram_dout, ra
 	output o1_valid;
 	input o1_received;
 
-			// Opcodes in the istructions, lenght accourding the number of the selected.
+			// Opcodes in the instructions, length according the number of the selected.
 	localparam	ADDF=4'b0000,          // Register addf
 			CPY=4'b0001,          // Copy from a register to another
 			DEC=4'b0010,          // Decrement a register by 1
@@ -11355,7 +11355,7 @@ module p13(clock_signal, reset_signal, rom_bus, rom_value, ram_din, ram_dout, ra
 	output o1_valid;
 	input o1_received;
 
-			// Opcodes in the istructions, lenght accourding the number of the selected.
+			// Opcodes in the instructions, length according the number of the selected.
 	localparam	ADDF=4'b0000,          // Register addf
 			CPY=4'b0001,          // Copy from a register to another
 			DEC=4'b0010,          // Decrement a register by 1
@@ -13932,7 +13932,7 @@ module p14(clock_signal, reset_signal, rom_bus, rom_value, ram_din, ram_dout, ra
 	output o1_valid;
 	input o1_received;
 
-			// Opcodes in the istructions, lenght accourding the number of the selected.
+			// Opcodes in the instructions, length according the number of the selected.
 	localparam	ADDF=4'b0000,          // Register addf
 			CPY=4'b0001,          // Copy from a register to another
 			DEC=4'b0010,          // Decrement a register by 1
@@ -16509,7 +16509,7 @@ module p15(clock_signal, reset_signal, rom_bus, rom_value, ram_din, ram_dout, ra
 	output o1_valid;
 	input o1_received;
 
-			// Opcodes in the istructions, lenght accourding the number of the selected.
+			// Opcodes in the instructions, length according the number of the selected.
 	localparam	ADDF=4'b0000,          // Register addf
 			CPY=4'b0001,          // Copy from a register to another
 			DEC=4'b0010,          // Decrement a register by 1
@@ -19086,7 +19086,7 @@ module p16(clock_signal, reset_signal, rom_bus, rom_value, ram_din, ram_dout, ra
 	output o1_valid;
 	input o1_received;
 
-			// Opcodes in the istructions, lenght accourding the number of the selected.
+			// Opcodes in the instructions, length according the number of the selected.
 	localparam	ADDF=4'b0000,          // Register addf
 			CPY=4'b0001,          // Copy from a register to another
 			DEC=4'b0010,          // Decrement a register by 1
@@ -21663,7 +21663,7 @@ module p17(clock_signal, reset_signal, rom_bus, rom_value, ram_din, ram_dout, ra
 	output o1_valid;
 	input o1_received;
 
-			// Opcodes in the istructions, lenght accourding the number of the selected.
+			// Opcodes in the instructions, length according the number of the selected.
 	localparam	ADDF=4'b0000,          // Register addf
 			CPY=4'b0001,          // Copy from a register to another
 			DEC=4'b0010,          // Decrement a register by 1
@@ -24240,7 +24240,7 @@ module p18(clock_signal, reset_signal, rom_bus, rom_value, ram_din, ram_dout, ra
 	output o1_valid;
 	input o1_received;
 
-			// Opcodes in the istructions, lenght accourding the number of the selected.
+			// Opcodes in the instructions, length according the number of the selected.
 	localparam	ADDF=4'b0000,          // Register addf
 			CPY=4'b0001,          // Copy from a register to another
 			DEC=4'b0010,          // Decrement a register by 1
@@ -26817,7 +26817,7 @@ module p19(clock_signal, reset_signal, rom_bus, rom_value, ram_din, ram_dout, ra
 	output o1_valid;
 	input o1_received;
 
-			// Opcodes in the istructions, lenght accourding the number of the selected.
+			// Opcodes in the instructions, length according the number of the selected.
 	localparam	ADDF=4'b0000,          // Register addf
 			CPY=4'b0001,          // Copy from a register to another
 			DEC=4'b0010,          // Decrement a register by 1
@@ -29357,7 +29357,7 @@ module p1(clock_signal, reset_signal, rom_bus, rom_value, i0, i0_valid, i0_recei
 	output o1_valid;
 	input o1_received;
 
-			// Opcodes in the istructions, lenght accourding the number of the selected.
+			// Opcodes in the instructions, length according the number of the selected.
 	localparam	ADDF=3'b000,          // Register addf
 			CLR=3'b001,          // Clear register
 			I2RW=3'b010,          // Input to register
@@ -30856,7 +30856,7 @@ module p20(clock_signal, reset_signal, rom_bus, rom_value, ram_din, ram_dout, ra
 	output o1_valid;
 	input o1_received;
 
-			// Opcodes in the istructions, lenght accourding the number of the selected.
+			// Opcodes in the instructions, length according the number of the selected.
 	localparam	ADDF=4'b0000,          // Register addf
 			CPY=4'b0001,          // Copy from a register to another
 			DEC=4'b0010,          // Decrement a register by 1
@@ -33396,7 +33396,7 @@ module p2(clock_signal, reset_signal, rom_bus, rom_value, i0, i0_valid, i0_recei
 	output o1_valid;
 	input o1_received;
 
-			// Opcodes in the istructions, lenght accourding the number of the selected.
+			// Opcodes in the instructions, length according the number of the selected.
 	localparam	ADDF=3'b000,          // Register addf
 			CLR=3'b001,          // Clear register
 			I2RW=3'b010,          // Input to register
@@ -34858,7 +34858,7 @@ module p3(clock_signal, reset_signal, rom_bus, rom_value, i0, i0_valid, i0_recei
 	output o1_valid;
 	input o1_received;
 
-			// Opcodes in the istructions, lenght accourding the number of the selected.
+			// Opcodes in the instructions, length according the number of the selected.
 	localparam	ADDF=3'b000,          // Register addf
 			CLR=3'b001,          // Clear register
 			I2RW=3'b010,          // Input to register
@@ -36526,7 +36526,7 @@ module p4(clock_signal, reset_signal, rom_bus, rom_value, ram_din, ram_dout, ram
 	output o15_valid;
 	input o15_received;
 
-			// Opcodes in the istructions, lenght accourding the number of the selected.
+			// Opcodes in the instructions, length according the number of the selected.
 	localparam	CLR=4'b0000,          // Clear register
 			DEC=4'b0001,          // Decrement a register by 1
 			I2RW=4'b0010,          // Input to register
@@ -39702,7 +39702,7 @@ module p5(clock_signal, reset_signal, rom_bus, rom_value, ram_din, ram_dout, ram
 	output o1_valid;
 	input o1_received;
 
-			// Opcodes in the istructions, lenght accourding the number of the selected.
+			// Opcodes in the instructions, length according the number of the selected.
 	localparam	ADDF=4'b0000,          // Register addf
 			CPY=4'b0001,          // Copy from a register to another
 			DEC=4'b0010,          // Decrement a register by 1
@@ -42279,7 +42279,7 @@ module p6(clock_signal, reset_signal, rom_bus, rom_value, ram_din, ram_dout, ram
 	output o1_valid;
 	input o1_received;
 
-			// Opcodes in the istructions, lenght accourding the number of the selected.
+			// Opcodes in the instructions, length according the number of the selected.
 	localparam	ADDF=4'b0000,          // Register addf
 			CPY=4'b0001,          // Copy from a register to another
 			DEC=4'b0010,          // Decrement a register by 1
@@ -44856,7 +44856,7 @@ module p7(clock_signal, reset_signal, rom_bus, rom_value, ram_din, ram_dout, ram
 	output o1_valid;
 	input o1_received;
 
-			// Opcodes in the istructions, lenght accourding the number of the selected.
+			// Opcodes in the instructions, length according the number of the selected.
 	localparam	ADDF=4'b0000,          // Register addf
 			CPY=4'b0001,          // Copy from a register to another
 			DEC=4'b0010,          // Decrement a register by 1
@@ -47433,7 +47433,7 @@ module p8(clock_signal, reset_signal, rom_bus, rom_value, ram_din, ram_dout, ram
 	output o1_valid;
 	input o1_received;
 
-			// Opcodes in the istructions, lenght accourding the number of the selected.
+			// Opcodes in the instructions, length according the number of the selected.
 	localparam	ADDF=4'b0000,          // Register addf
 			CPY=4'b0001,          // Copy from a register to another
 			DEC=4'b0010,          // Decrement a register by 1
@@ -50010,7 +50010,7 @@ module p9(clock_signal, reset_signal, rom_bus, rom_value, ram_din, ram_dout, ram
 	output o1_valid;
 	input o1_received;
 
-			// Opcodes in the istructions, lenght accourding the number of the selected.
+			// Opcodes in the instructions, length according the number of the selected.
 	localparam	ADDF=4'b0000,          // Register addf
 			CPY=4'b0001,          // Copy from a register to another
 			DEC=4'b0010,          // Decrement a register by 1

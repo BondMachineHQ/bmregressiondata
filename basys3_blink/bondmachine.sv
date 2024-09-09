@@ -87,7 +87,7 @@ module p0(clock_signal, reset_signal, rom_bus, rom_value, o0, o0_valid, o0_recei
 	output o0_valid;
 	input o0_received;
 
-			// Opcodes in the istructions, lenght accourding the number of the selected.
+			// Opcodes in the instructions, length according the number of the selected.
 	localparam	INC=2'b00,          // Increment a register by 1
 			J=2'b01,          // Jump to a program location
 			R2O=2'b10;          // Register to output
