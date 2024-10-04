@@ -1,0 +1,4 @@
+regbase: icebreaker_blink
+sourcedata: working_dir/bondmachine.sv
+targetdata: bondmachine.sv
+regcommand: make hdl
