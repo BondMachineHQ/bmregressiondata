@@ -179,6 +179,8 @@ module p0(clock_signal, reset_signal, rom_bus, rom_value, ram_din, ram_dout, ram
 
 
 	reg o0_val;
+	reg waitsm;
+	initial waitsm = 1'b0;
 
 	always @(posedge clock_signal, posedge reset_signal)
 	begin

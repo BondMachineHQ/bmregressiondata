@@ -703,7 +703,7 @@ module bondmachine_main(
 	wire Input0_received;
 	wire [15:0] Output0;
 
-	// Processing per-extramodule initializazions
+	// Processing per-extramodule initializations
 
 	reg [7:0]   hcount;
 	reg [7:0]   header [0:99]; 
@@ -1139,7 +1139,7 @@ module p0(clock_signal, reset_signal, rom_bus, rom_value, ram_din, ram_dout, ram
 			CMPR=5'b00010,          // Register comparison
 			CPY=5'b00011,          // Copy from a register to another
 			DEC=5'b00100,          // Decrement a register by 1
-			I2RW=5'b00101,          // Input to register
+			I2RW=5'b00101,          // Sync input to register
 			INC=5'b00110,          // Increment a register by 1
 			J=5'b00111,          // Jump to a program location
 			JCMPL=5'b01000,          // Jump to a program location conditioned to the comparison flag
@@ -1315,6 +1315,8 @@ end
 
 
 	reg o0_val;
+	reg waitsm;
+	initial waitsm = 1'b0;
 
 	always @(posedge clock_signal, posedge reset_signal)
 	begin
