@@ -2,3 +2,6 @@ regbase: basys3_counter
 sourcedata: working_dir/bondmachine.sv
 targetdata: bondmachine.sv
 regcommand: make hdl
+tags:
+  - default
+  - hdl
