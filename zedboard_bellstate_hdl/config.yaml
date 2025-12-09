@@ -5,3 +5,5 @@ regcommand: make hdl
 tags:
   - default
   - hdl
+  - fast
+  - zedboard

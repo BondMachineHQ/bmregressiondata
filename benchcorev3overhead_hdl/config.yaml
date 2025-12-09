@@ -1,4 +1,4 @@
-regbase: basys3_counter
+regbase: 00Regression/benchcorev3overhead
 sourcedata: working_dir/bondmachine.sv
 targetdata: bondmachine.sv
 regcommand: make hdl
@@ -6,4 +6,4 @@ tags:
   - default
   - hdl
   - fast
-  - basys3
+  - zedboard

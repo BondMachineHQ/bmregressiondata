@@ -1,0 +1,11 @@
+regbase: 00Regression/benchcorev3overhead
+sourcedata: working_dir/bmsim_outputs.seq
+targetdata: bmsim_outputs.seq
+regcommand: |
+            make apply
+            make deploycollect
+tags:
+  - slow
+  - accel
+  - fpga
+  - zedboard

@@ -1,0 +1,9 @@
+regbase: 00Regression/benchcorev3overhead
+sourcedata: simbatch_outputs.csv
+targetdata: simbatch_outputs.csv
+regcommand: make simbatch
+tags:
+  - default
+  - simbatch
+  - fast
+  - zedboard
