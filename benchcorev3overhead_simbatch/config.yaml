@@ -3,6 +3,7 @@ sourcedata: simbatch_outputs.csv
 targetdata: simbatch_outputs.csv
 regcommand: make simbatch
 tags:
+  - all
   - default
   - simbatch
   - fast

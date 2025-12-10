@@ -5,6 +5,7 @@ regcommand: |
             make apply
             make deploycollect
 tags:
+  - all
   - slow
   - accel
   - fpga
