@@ -1,0 +1,10 @@
+regbase: basys3_supercar_single
+sourcedata: working_dir/bondmachine.sv
+targetdata: bondmachine.sv
+regcommand: make hdl
+tags:
+  - all
+  - default
+  - hdl
+  - fast
+  - basys3
