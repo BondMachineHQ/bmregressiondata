@@ -73,12 +73,12 @@ endmodule
     */
 
  
-    localparam samples = 16; // number of samples that I expect from the client
+    localparam samples = 64; // number of samples that I expect from the client
     localparam bminputs = 1;  // number of bminputs for each sample (or bminputs)
     localparam bmoutputs = 1; // number of output for the classification
 	localparam NUMBER_OF_INPUTS  = samples*bminputs;                                     
     localparam NUMBER_OF_OUTPUTS = samples*bmoutputs;
-	localparam precision = 32; // precision bit
+	localparam precision = 32;
 	localparam maxfifoloop = (C_S00_AXIS_TDATA_WIDTH / precision) - 1;
  
 	// Machine state for the slave stream part
