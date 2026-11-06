@@ -854,7 +854,7 @@ endmodule
         NOW START THE AXIS SLAVE SECTION
     */
 
-    localparam samples = 16; // number of samples that I expect from the client
+    localparam samples = 64; // number of samples that I expect from the client
     localparam bminputs = 8;  // number of bminputs for each sample (or bminputs)
     localparam bmoutputs = 8; // number of output for the classification
 	localparam NUMBER_OF_INPUTS  = samples*bminputs;                                     
@@ -2128,7 +2128,7 @@ module p0(clock_signal, reset_signal, rom_bus, rom_value, i0, i0_valid, i0_recei
 			// Opcodes in the instructions, length according the number of the selected.
 	localparam	ADDF=3'b000,          // Register addf
 			CLR=3'b001,          // Clear register
-			I2RW=3'b010,          // Input to register
+			I2RW=3'b010,          // Sync input to register
 			J=3'b011,          // Jump to a program location
 			R2OWA=3'b100;          // Register to output
 
@@ -3628,7 +3628,7 @@ module p10(clock_signal, reset_signal, rom_bus, rom_value, ram_din, ram_dout, ra
 	localparam	ADDF=4'b0000,          // Register addf
 			CPY=4'b0001,          // Copy from a register to another
 			DEC=4'b0010,          // Decrement a register by 1
-			I2RW=4'b0011,          // Input to register
+			I2RW=4'b0011,          // Sync input to register
 			INC=4'b0100,          // Increment a register by 1
 			J=4'b0101,          // Jump to a program location
 			JZ=4'b0110,          // Zero conditional jump
@@ -6205,7 +6205,7 @@ module p11(clock_signal, reset_signal, rom_bus, rom_value, ram_din, ram_dout, ra
 	localparam	ADDF=4'b0000,          // Register addf
 			CPY=4'b0001,          // Copy from a register to another
 			DEC=4'b0010,          // Decrement a register by 1
-			I2RW=4'b0011,          // Input to register
+			I2RW=4'b0011,          // Sync input to register
 			INC=4'b0100,          // Increment a register by 1
 			J=4'b0101,          // Jump to a program location
 			JZ=4'b0110,          // Zero conditional jump
@@ -8782,7 +8782,7 @@ module p12(clock_signal, reset_signal, rom_bus, rom_value, ram_din, ram_dout, ra
 	localparam	ADDF=4'b0000,          // Register addf
 			CPY=4'b0001,          // Copy from a register to another
 			DEC=4'b0010,          // Decrement a register by 1
-			I2RW=4'b0011,          // Input to register
+			I2RW=4'b0011,          // Sync input to register
 			INC=4'b0100,          // Increment a register by 1
 			J=4'b0101,          // Jump to a program location
 			JZ=4'b0110,          // Zero conditional jump
@@ -11359,7 +11359,7 @@ module p13(clock_signal, reset_signal, rom_bus, rom_value, ram_din, ram_dout, ra
 	localparam	ADDF=4'b0000,          // Register addf
 			CPY=4'b0001,          // Copy from a register to another
 			DEC=4'b0010,          // Decrement a register by 1
-			I2RW=4'b0011,          // Input to register
+			I2RW=4'b0011,          // Sync input to register
 			INC=4'b0100,          // Increment a register by 1
 			J=4'b0101,          // Jump to a program location
 			JZ=4'b0110,          // Zero conditional jump
@@ -13936,7 +13936,7 @@ module p14(clock_signal, reset_signal, rom_bus, rom_value, ram_din, ram_dout, ra
 	localparam	ADDF=4'b0000,          // Register addf
 			CPY=4'b0001,          // Copy from a register to another
 			DEC=4'b0010,          // Decrement a register by 1
-			I2RW=4'b0011,          // Input to register
+			I2RW=4'b0011,          // Sync input to register
 			INC=4'b0100,          // Increment a register by 1
 			J=4'b0101,          // Jump to a program location
 			JZ=4'b0110,          // Zero conditional jump
@@ -16513,7 +16513,7 @@ module p15(clock_signal, reset_signal, rom_bus, rom_value, ram_din, ram_dout, ra
 	localparam	ADDF=4'b0000,          // Register addf
 			CPY=4'b0001,          // Copy from a register to another
 			DEC=4'b0010,          // Decrement a register by 1
-			I2RW=4'b0011,          // Input to register
+			I2RW=4'b0011,          // Sync input to register
 			INC=4'b0100,          // Increment a register by 1
 			J=4'b0101,          // Jump to a program location
 			JZ=4'b0110,          // Zero conditional jump
@@ -19090,7 +19090,7 @@ module p16(clock_signal, reset_signal, rom_bus, rom_value, ram_din, ram_dout, ra
 	localparam	ADDF=4'b0000,          // Register addf
 			CPY=4'b0001,          // Copy from a register to another
 			DEC=4'b0010,          // Decrement a register by 1
-			I2RW=4'b0011,          // Input to register
+			I2RW=4'b0011,          // Sync input to register
 			INC=4'b0100,          // Increment a register by 1
 			J=4'b0101,          // Jump to a program location
 			JZ=4'b0110,          // Zero conditional jump
@@ -21667,7 +21667,7 @@ module p17(clock_signal, reset_signal, rom_bus, rom_value, ram_din, ram_dout, ra
 	localparam	ADDF=4'b0000,          // Register addf
 			CPY=4'b0001,          // Copy from a register to another
 			DEC=4'b0010,          // Decrement a register by 1
-			I2RW=4'b0011,          // Input to register
+			I2RW=4'b0011,          // Sync input to register
 			INC=4'b0100,          // Increment a register by 1
 			J=4'b0101,          // Jump to a program location
 			JZ=4'b0110,          // Zero conditional jump
@@ -24244,7 +24244,7 @@ module p18(clock_signal, reset_signal, rom_bus, rom_value, ram_din, ram_dout, ra
 	localparam	ADDF=4'b0000,          // Register addf
 			CPY=4'b0001,          // Copy from a register to another
 			DEC=4'b0010,          // Decrement a register by 1
-			I2RW=4'b0011,          // Input to register
+			I2RW=4'b0011,          // Sync input to register
 			INC=4'b0100,          // Increment a register by 1
 			J=4'b0101,          // Jump to a program location
 			JZ=4'b0110,          // Zero conditional jump
@@ -26821,7 +26821,7 @@ module p19(clock_signal, reset_signal, rom_bus, rom_value, ram_din, ram_dout, ra
 	localparam	ADDF=4'b0000,          // Register addf
 			CPY=4'b0001,          // Copy from a register to another
 			DEC=4'b0010,          // Decrement a register by 1
-			I2RW=4'b0011,          // Input to register
+			I2RW=4'b0011,          // Sync input to register
 			INC=4'b0100,          // Increment a register by 1
 			J=4'b0101,          // Jump to a program location
 			JZ=4'b0110,          // Zero conditional jump
@@ -29360,7 +29360,7 @@ module p1(clock_signal, reset_signal, rom_bus, rom_value, i0, i0_valid, i0_recei
 			// Opcodes in the instructions, length according the number of the selected.
 	localparam	ADDF=3'b000,          // Register addf
 			CLR=3'b001,          // Clear register
-			I2RW=3'b010,          // Input to register
+			I2RW=3'b010,          // Sync input to register
 			J=3'b011,          // Jump to a program location
 			R2OWA=3'b100;          // Register to output
 
@@ -30860,7 +30860,7 @@ module p20(clock_signal, reset_signal, rom_bus, rom_value, ram_din, ram_dout, ra
 	localparam	ADDF=4'b0000,          // Register addf
 			CPY=4'b0001,          // Copy from a register to another
 			DEC=4'b0010,          // Decrement a register by 1
-			I2RW=4'b0011,          // Input to register
+			I2RW=4'b0011,          // Sync input to register
 			INC=4'b0100,          // Increment a register by 1
 			J=4'b0101,          // Jump to a program location
 			JZ=4'b0110,          // Zero conditional jump
@@ -33399,7 +33399,7 @@ module p2(clock_signal, reset_signal, rom_bus, rom_value, i0, i0_valid, i0_recei
 			// Opcodes in the instructions, length according the number of the selected.
 	localparam	ADDF=3'b000,          // Register addf
 			CLR=3'b001,          // Clear register
-			I2RW=3'b010,          // Input to register
+			I2RW=3'b010,          // Sync input to register
 			J=3'b011,          // Jump to a program location
 			R2OWA=3'b100;          // Register to output
 
@@ -34861,7 +34861,7 @@ module p3(clock_signal, reset_signal, rom_bus, rom_value, i0, i0_valid, i0_recei
 			// Opcodes in the instructions, length according the number of the selected.
 	localparam	ADDF=3'b000,          // Register addf
 			CLR=3'b001,          // Clear register
-			I2RW=3'b010,          // Input to register
+			I2RW=3'b010,          // Sync input to register
 			J=3'b011,          // Jump to a program location
 			R2OWA=3'b100;          // Register to output
 
@@ -36529,7 +36529,7 @@ module p4(clock_signal, reset_signal, rom_bus, rom_value, ram_din, ram_dout, ram
 			// Opcodes in the instructions, length according the number of the selected.
 	localparam	CLR=4'b0000,          // Clear register
 			DEC=4'b0001,          // Decrement a register by 1
-			I2RW=4'b0010,          // Input to register
+			I2RW=4'b0010,          // Sync input to register
 			INC=4'b0011,          // Increment a register by 1
 			J=4'b0100,          // Jump to a program location
 			JZ=4'b0101,          // Zero conditional jump
@@ -39706,7 +39706,7 @@ module p5(clock_signal, reset_signal, rom_bus, rom_value, ram_din, ram_dout, ram
 	localparam	ADDF=4'b0000,          // Register addf
 			CPY=4'b0001,          // Copy from a register to another
 			DEC=4'b0010,          // Decrement a register by 1
-			I2RW=4'b0011,          // Input to register
+			I2RW=4'b0011,          // Sync input to register
 			INC=4'b0100,          // Increment a register by 1
 			J=4'b0101,          // Jump to a program location
 			JZ=4'b0110,          // Zero conditional jump
@@ -42283,7 +42283,7 @@ module p6(clock_signal, reset_signal, rom_bus, rom_value, ram_din, ram_dout, ram
 	localparam	ADDF=4'b0000,          // Register addf
 			CPY=4'b0001,          // Copy from a register to another
 			DEC=4'b0010,          // Decrement a register by 1
-			I2RW=4'b0011,          // Input to register
+			I2RW=4'b0011,          // Sync input to register
 			INC=4'b0100,          // Increment a register by 1
 			J=4'b0101,          // Jump to a program location
 			JZ=4'b0110,          // Zero conditional jump
@@ -44860,7 +44860,7 @@ module p7(clock_signal, reset_signal, rom_bus, rom_value, ram_din, ram_dout, ram
 	localparam	ADDF=4'b0000,          // Register addf
 			CPY=4'b0001,          // Copy from a register to another
 			DEC=4'b0010,          // Decrement a register by 1
-			I2RW=4'b0011,          // Input to register
+			I2RW=4'b0011,          // Sync input to register
 			INC=4'b0100,          // Increment a register by 1
 			J=4'b0101,          // Jump to a program location
 			JZ=4'b0110,          // Zero conditional jump
@@ -47437,7 +47437,7 @@ module p8(clock_signal, reset_signal, rom_bus, rom_value, ram_din, ram_dout, ram
 	localparam	ADDF=4'b0000,          // Register addf
 			CPY=4'b0001,          // Copy from a register to another
 			DEC=4'b0010,          // Decrement a register by 1
-			I2RW=4'b0011,          // Input to register
+			I2RW=4'b0011,          // Sync input to register
 			INC=4'b0100,          // Increment a register by 1
 			J=4'b0101,          // Jump to a program location
 			JZ=4'b0110,          // Zero conditional jump
@@ -50014,7 +50014,7 @@ module p9(clock_signal, reset_signal, rom_bus, rom_value, ram_din, ram_dout, ram
 	localparam	ADDF=4'b0000,          // Register addf
 			CPY=4'b0001,          // Copy from a register to another
 			DEC=4'b0010,          // Decrement a register by 1
-			I2RW=4'b0011,          // Input to register
+			I2RW=4'b0011,          // Sync input to register
 			INC=4'b0100,          // Increment a register by 1
 			J=4'b0101,          // Jump to a program location
 			JZ=4'b0110,          // Zero conditional jump
